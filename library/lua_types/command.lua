@@ -10,3 +10,5 @@
 ---@field completion? lf.CommandCompletionFunc
 ---@field action lf.CommandFunc
 ---@field is_sync? boolean
+
+---@alias lf.CommandTbl table<string, string | lf.CommandFunc | lf.LuaCommand>

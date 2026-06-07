@@ -1,5 +1,5 @@
 ---@class lf.PluginRet
----@field command? table<string, string | lf.CommandFunc | lf.LuaCommand>
----@field event_hook? table<lf.EventType, lf.EventHookFunc | lf.EventHook>
----@field previewer? table<string, lf.PreviewerAction | lf.Previewer>
----@field sort_method? table<string, lf.SortMethodFunc | lf.SortMethod>
+---@field command? lf.CommandTbl
+---@field event_hook? lf.EventHookTbl
+---@field previewer? lf.PreviewerTbl
+---@field sort_method? lf.SortMethodTbl
