@@ -16,10 +16,10 @@ lf_types.BufWriter = nil ---@type lf.BufWriter
 ---@type lf.App
 app = nil
 
----@alias lf.PreviewerAction fun(buf_writer: lf.BufWriter, path: string, w: integer, h: integer, x: integer, y: integer)
+---@alias lf.PreviewerAction fun(buf_writer: lf.BufWriter, path: string, w: integer, h: integer, x: integer, y: integer): boolean?
 
 ---@class lf.Previewer
----@field condition? fun(path: string): boolean
+---@field condition? fun(path: string): boolean?
 ---@field action lf.PreviewerAction
 
 ---@class lf.PluginRet
