@@ -23,4 +23,10 @@ M.EventType = {
 ---@param str string
 function M.glob_match(pattern, str) end
 
+---@param s string
+---@param words string[]
+---@return lf.CompMatch[]
+---@return string
+function M.match_word(s, words) end
+
 return M
