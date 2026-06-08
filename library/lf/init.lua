@@ -35,9 +35,9 @@ M.ShellCmdType = {
 
 ---@enum lf.KeyMapType
 M.KeyMapType = {
-    Normal = nil, ---@type string
-    Visual = nil, ---@type string
-    Command = nil, ---@type string
+    Normal = "n",
+    Visual = "v",
+    Command = "c",
 }
 
 ---@param str string
