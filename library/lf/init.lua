@@ -48,6 +48,14 @@ function M.cmd(str) end
 ---@param ... string # command arguments
 function M.shell(prefix, cmd, ...) end
 
+---@param opt string
+---@param val string
+function M.set_opt(opt, val) end
+
+---@param opt string
+---@param val string
+function M.set_local_opt(opt, val) end
+
 ---@param pattern string
 ---@param str string
 function M.glob_match(pattern, str) end
