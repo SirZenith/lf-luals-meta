@@ -23,34 +23,41 @@ function File:mode() end
 ---@return boolean
 function File:is_dir() end
 
----@param value integer?
 ---@return integer
-function File:link_state(value) end
+function File:link_state() end
 
----@param value string?
-function File:link_target(value) end
-
----@param value string?
 ---@return string
-function File:path(value) end
+function File:link_target() end
 
----@param value integer?
+---@return string
+function File:path() end
+
 ---@return integer
-function File:dir_count(value) end
+function File:dir_count() end
 
----@param value integer?
 ---@return integer
-function File:dir_size(value) end
+function File:dir_size() end
 
----@param value string?
----@return string
-function File:custom_info(value) end
+---@return lf.time.Time
+function File:access_time() end
 
----@param value string?
+---@return lf.time.Time
+function File:birth_time() end
+
+---@return lf.time.Time
+function File:change_time() end
+
+---@param str? string
 ---@return string
-function File:ext(value) end
+function File:custom_info(str) end
+
+---@return string
+function File:ext() end
 
 ---@param key any
 ---@param value any?
 ---@return any
 function File:extra_info(key, value) end
+
+---@return boolean
+function File:is_previewable() end

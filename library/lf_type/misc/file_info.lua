@@ -16,5 +16,8 @@ function FileInfo:size() end
 ---@return integer
 function FileInfo:mode() end
 
+---@return lf.time.Time
+function FileInfo:mod_time() end
+
 ---@return boolean
 function FileInfo:is_dir() end
