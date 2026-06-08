@@ -1,5 +1,6 @@
 ---@class lf.PluginRet
 ---@field command? lf.CommandTbl
 ---@field event_hook? lf.EventHookTbl
+---@field key_map? lf.KeyMapTbl
 ---@field previewer? lf.PreviewerTbl
 ---@field sort_method? lf.SortMethodTbl

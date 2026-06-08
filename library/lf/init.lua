@@ -19,6 +19,35 @@ M.EventType = {
     OnQuit = nil, ---@type string
 }
 
+---@enum lf.ShellCmdType
+M.ShellCmdType = {
+    Normal = nil, ---@type string
+    Pipe = nil, ---@type string
+    Wait = nil, ---@type string
+    Async = nil, ---@type string
+}
+
+---@alias lf.ShellCmdPrefix
+---| "$"
+---| "%"
+---| "!"
+---| "&"
+
+---@enum lf.KeyMapType
+M.KeyMapType = {
+    Normal = nil, ---@type string
+    Visual = nil, ---@type string
+    Command = nil, ---@type string
+}
+
+---@param str string
+function M.cmd(str) end
+
+---@param prefix lf.ShellCmdType | lf.ShellCmdPrefix
+---@param cmd string
+---@param ... string # command arguments
+function M.shell(prefix, cmd, ...) end
+
 ---@param pattern string
 ---@param str string
 function M.glob_match(pattern, str) end
