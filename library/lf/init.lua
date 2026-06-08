@@ -52,9 +52,10 @@ function M.shell(prefix, cmd, ...) end
 ---@param val string
 function M.set_opt(opt, val) end
 
+---@param path string
 ---@param opt string
 ---@param val string
-function M.set_local_opt(opt, val) end
+function M.set_local_opt(path, opt, val) end
 
 ---@param pattern string
 ---@param str string
