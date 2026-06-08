@@ -48,6 +48,17 @@ function M.cmd(str) end
 ---@param ... string # command arguments
 function M.shell(prefix, cmd, ...) end
 
+-- call runs lf command
+---@param cmd string
+---@param ... string # arguments
+function M.call(cmd, ...) end
+
+-- call_n runs a lf command with count flag
+---@param count integer
+---@param cmd string
+---@param ... string # arguments
+function M.call_n(count, cmd, ...) end
+
 ---@param opt string
 ---@param val string
 function M.set_opt(opt, val) end
