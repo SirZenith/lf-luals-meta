@@ -63,7 +63,8 @@ function Nav:toggle_selection(path) end
 function Nav:toggle() end
 
 ---@param path string
-function Nav:tag_toggle_selection(path) end
+---@param tag string
+function Nav:tag_toggle_selection(path, tag) end
 
 ---@param tag string
 ---@return string? err
