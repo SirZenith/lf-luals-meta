@@ -88,6 +88,18 @@ function Nav:cd(path) end
 ---@param intert boolean
 function Nav:glob_sel(pattern, intert) end
 
+---@return string? err
+function Nav:read_marks() end
+
+---@return string? err
+function Nav:write_marks() end
+
+---@return string? err
+function Nav:read_tags() end
+
+---@return string? err
+function Nav:write_tags() end
+
 ---@return lf.Dir?
 function Nav:curr_dir() end
 
