@@ -1,4 +1,4 @@
----@alias lf.PreviewerAction fun(buf_writer: lf.BufWriter, path: string, w: integer, h: integer, x: integer, y: integer): boolean?
+---@alias lf.PreviewerAction fun(buf_writer: lf.bufio.BufWriter, path: string, w: integer, h: integer, x: integer, y: integer, mode: string): boolean?, string?
 
 ---@class lf.Previewer
 ---@field condition? fun(path: string): boolean?

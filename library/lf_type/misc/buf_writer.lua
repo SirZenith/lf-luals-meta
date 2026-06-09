@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.BufWriter
+---@class lf.bufio.BufWriter
 local BufWriter = {}
 
 ---@return integer
@@ -15,7 +15,7 @@ function BufWriter:flush() end
 ---@return integer
 function BufWriter:size() end
 
----@param str string
+---@param ... string
 ---@return integer
 ---@return string? err
-function BufWriter:write_string(str) end
+function BufWriter:write_string(...) end

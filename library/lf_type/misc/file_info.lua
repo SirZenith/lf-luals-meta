@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.FileInfo
+---@class lf.fs.FileInfo
 local FileInfo = {}
 
 ---@param path string
