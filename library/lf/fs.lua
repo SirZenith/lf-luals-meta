@@ -53,7 +53,7 @@ function M.basename(path) end
 ---@return string
 function M.ext(path) end
 
----@return lf.FileInfo
+---@return lf.fs.FileInfo
 ---@return string? err
 function M.stat(path) end
 
