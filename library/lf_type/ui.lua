@@ -3,13 +3,13 @@
 ---@class lf.UI
 local UI = {}
 
----@param msg string
-function UI:echo(msg) end
+---@param ... any
+function UI:echo(...) end
 
----@param msg string
-function UI:echomsg(msg) end
+---@param ... any
+function UI:echomsg(...) end
 
----@param ... string
+---@param ... any
 function UI:echoerr(...) end
 
 ---@param fmt string
