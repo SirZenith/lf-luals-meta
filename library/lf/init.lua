@@ -40,6 +40,9 @@ M.KeyMapType = {
     Command = "c",
 }
 
+---@param value any
+function M.print(value) end
+
 ---@param str string
 function M.cmd(str) end
 
@@ -67,6 +70,15 @@ function M.set_opt(opt, val) end
 ---@param opt string
 ---@param val string
 function M.set_local_opt(path, opt, val) end
+
+---@param opt string
+---@return any
+function M.get_opt(opt) end
+
+---@param path string
+---@param opt string
+---@return any
+function M.get_opt(path, opt) end
 
 ---@param pattern string
 ---@param str string

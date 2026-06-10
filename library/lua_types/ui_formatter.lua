@@ -1,0 +1,42 @@
+---@meta
+
+---@class lf.UIRulerData
+---@field curr_file? lf.File
+---@field width integer
+---@field message string
+---@field keys string
+---@field progress string[]
+---@field copy string[]
+---@field cut string[]
+---@field select string[]
+---@field visual string[]
+---@field index integer
+---@field total integer
+---@field hidden integer
+---@field all integer
+---@field line_percentage string
+---@field scroll_percentage string
+---@field filter string[]
+---@field mode string
+
+---@class lf.UIPromptLineData
+---@field width integer
+---@field user_name string
+---@field host_name string
+---@field file_name string
+---@field pwd string
+---@field pwd_with_sep string
+---@field filter string[]
+---@field spacer string
+
+---@class lf.UIFormatterTbl
+---@field cursoractivefmt? fun(s: string): string
+---@field cursorparentfmt? fun(s: string): string
+---@field cursorpreviewfmt? fun(s: string): string
+---@field dupfilefmt? fun(basename: string, ext: string, dup_index: integer): string
+---@field errorfmt? fun(msg: string): string
+---@field numbercursorfmt? fun(line_number: string): string
+---@field numberfmt? fun(line_number: string): string
+---@field rulerfile? fun(data: lf.UIRulerData): string, string
+---@field promptfmt? fun(data: lf.UIPromptLineData): string
+---@field tagfmt? fun(tag: string): string

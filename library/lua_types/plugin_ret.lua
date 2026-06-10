@@ -4,3 +4,5 @@
 ---@field key_map? lf.KeyMapTbl
 ---@field previewer? lf.PreviewerTbl
 ---@field sort_method? lf.SortMethodTbl
+---@field ui_formatter? lf.UIFormatterTbl
+---@field ui_style? lf.UIStyleTbl

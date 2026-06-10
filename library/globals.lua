@@ -16,6 +16,9 @@ lf_types.FileInfo = nil ---@type lf.fs.FileInfo
 lf_types.File = nil ---@type lf.File
 lf_types.Dir = nil ---@type lf.Dir
 lf_types.Nav = nil ---@type lf.Nav
+-- tcell
+lf_types.TcellColor = nil ---@type lf.tcell.Color
+lf_types.TcellStyle = nil ---@type lf.tcell.Style
 -- time
 lf_types.Time = nil ---@type lf.time.Time
 lf_types.Month = nil ---@type lf.time.Time
