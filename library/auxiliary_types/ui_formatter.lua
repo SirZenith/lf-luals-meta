@@ -30,13 +30,13 @@
 ---@field spacer string
 
 ---@class lf.UIFormatterTbl
----@field cursoractivefmt? fun(s: string): string
----@field cursorparentfmt? fun(s: string): string
----@field cursorpreviewfmt? fun(s: string): string
----@field dupfilefmt? fun(basename: string, ext: string, dup_index: integer): string
----@field errorfmt? fun(msg: string): string
----@field numbercursorfmt? fun(line_number: string): string
----@field numberfmt? fun(line_number: string): string
----@field rulerfile? fun(data: lf.UIRulerData): string, string
----@field promptfmt? fun(data: lf.UIPromptLineData): string
----@field tagfmt? fun(tag: string): string
+---@field cursoractive? fun(s: string): string
+---@field cursorparent? fun(s: string): string
+---@field cursorpreview? fun(s: string): string
+---@field dupfile? fun(basename: string, ext: string, dup_index: integer): string
+---@field error? fun(msg: string): string
+---@field numbercursor? fun(line_number: string): string
+---@field number? fun(line_number: string): string
+---@field ruler? fun(data: lf.UIRulerData): string, string
+---@field prompt? fun(data: lf.UIPromptLineData): string
+---@field tag? fun(tag: string): string

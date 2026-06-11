@@ -3,6 +3,6 @@
 ---@field event_hook? lf.EventHookTbl
 ---@field key_map? lf.KeyMapTbl
 ---@field previewer? lf.PreviewerTbl
----@field sort_method? lf.SortMethodTbl
+---@field sorting_method? lf.SortingMethodTbl
 ---@field ui_formatter? lf.UIFormatterTbl
 ---@field ui_style? lf.UIStyleTbl
