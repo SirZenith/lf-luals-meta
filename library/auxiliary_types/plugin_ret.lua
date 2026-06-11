@@ -1,7 +1,9 @@
 ---@class lf.PluginRet
 ---@field command? lf.CommandTbl
 ---@field event_hook? lf.EventHookTbl
+---@field local_option? lf.LocalOptionTbl
 ---@field key_map? lf.KeyMapTbl
+---@field option? lf.OptionTbl
 ---@field previewer? lf.PreviewerTbl
 ---@field sorting_method? lf.SortingMethodTbl
 ---@field ui_formatter? lf.UIFormatterTbl
