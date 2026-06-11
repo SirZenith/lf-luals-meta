@@ -45,3 +45,19 @@ function Cmd:stdin_pipe() end
 
 ---@return integer?
 function Cmd:exit_code() end
+
+-- set_stdout_writer sets writer value of command stdout
+---@param writer userdata
+function Cmd:set_stdout_writer(writer) end
+
+-- set_stdout_writer sets writer value of command stderr
+---@param writer userdata
+function Cmd:set_stderr_writer(writer) end
+
+-- set_stdout_writer use a writer function as command's stdout writer
+---@param fn fun(p: string): integer, string?
+function Cmd:set_stdout_writer_func(fn) end
+
+-- set_stdout_writer use a writer function as command's stderr writer
+---@param fn fun(p: string): integer, string?
+function Cmd:set_stderr_writer_func(fn) end
