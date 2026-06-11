@@ -2,10 +2,6 @@
 
 local M = {}
 
-M.REGISTRY_SORT_METHOD = "sort_method" ---@type string
-M.REGISTRY_COMMAND = "command" ---@type string
-M.REGISTRY_EVENT_HOOK = "event_hook" ---@type string
-
 ---@enum lf.EventType
 M.EventType = {
     PreCd = nil, ---@type string
