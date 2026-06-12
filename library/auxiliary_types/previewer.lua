@@ -5,6 +5,6 @@
 ---@field condition? fun(path: string): boolean?
 ---@field clean? lf.PreviewerCleanFunc
 ---@field action lf.PreviewerAction
----@field is_sync? boolean
+---@field is_async? boolean
 
 ---@alias lf.PreviewerTbl table<string, lf.PreviewerAction | lf.Previewer>

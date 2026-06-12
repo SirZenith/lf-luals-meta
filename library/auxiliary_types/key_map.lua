@@ -4,7 +4,7 @@
 
 ---@class lf.KeyMap
 ---@field action string | lf.KeyMapFunc
----@field is_sync boolean
+---@field is_async boolean
 
 ---@alias lf.KeyMapGroup table<string, string | lf.KeyMapFunc | lf.KeyMap>
 

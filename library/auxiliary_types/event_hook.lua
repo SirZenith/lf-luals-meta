@@ -4,6 +4,6 @@
 
 ---@class lf.EventHook
 ---@field action lf.EventHookFunc
----@field is_sync? boolean
+---@field is_async? boolean
 
 ---@alias lf.EventHookTbl table<lf.EventType, lf.EventHookFunc | lf.EventHook>
