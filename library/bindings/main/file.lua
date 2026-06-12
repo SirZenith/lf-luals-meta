@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.File
+---@class lf.File : userdata
 local File = {
     LinkStateNotLink = nil, ---@type integer
     LinkStateWorking = nil, ---@type integer

@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.bufio.BufReader
+---@class lf.bufio.BufReader : userdata
 local BufReader = {}
 
 ---@return integer

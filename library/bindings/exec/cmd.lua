@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.exec.Cmd
+---@class lf.exec.Cmd : userdata
 local Cmd = {}
 
 ---@param cmd_str string

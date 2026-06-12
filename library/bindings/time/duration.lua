@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.time.Duration
+---@class lf.time.Duration : userdata
 local Duration = {}
 
 Duration.Nanosecond = nil ---@type lf.time.Duration

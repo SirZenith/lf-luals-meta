@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.bufio.BufWriter
+---@class lf.bufio.BufWriter : userdata
 local BufWriter = {}
 
 ---@return integer

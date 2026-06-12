@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.Nav
+---@class lf.Nav : userdata
 local Nav = {}
 
 ---@param path string

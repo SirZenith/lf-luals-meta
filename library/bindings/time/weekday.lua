@@ -1,4 +1,4 @@
 ---@meta
 
----@class lf.time.Weekday
+---@class lf.time.Weekday : userdata
 local Weekday = {}

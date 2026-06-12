@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.tcell.Style
+---@class lf.tcell.Style : userdata
 local Style = {}
 
 ---@return lf.tcell.Style

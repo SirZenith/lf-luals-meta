@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.CompMatch
+---@class lf.CompMatch : userdata
 local CompMatch = {}
 
 ---@param name string

@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.FuncWriter
+---@class lf.FuncWriter : userdata
 local FuncWriter = {}
 
 ---@return lf.FuncWriter

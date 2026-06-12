@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.time.Time
+---@class lf.time.Time : userdata
 local Time = {}
 
 ---@return lf.time.Time

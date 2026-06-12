@@ -148,7 +148,7 @@
 ---| "lightslategrey"
 ---| "slategrey"
 
----@class lf.tcell.Color
+---@class lf.tcell.Color : userdata
 local Color = {}
 
 ---@param r integer

@@ -1,4 +1,4 @@
 ---@meta
 
----@class lf.time.Month
+---@class lf.time.Month : userdata
 local Month = {}

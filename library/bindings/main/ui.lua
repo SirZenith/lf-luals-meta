@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.UI
+---@class lf.UI : userdata
 local UI = {}
 
 ---@param ... any

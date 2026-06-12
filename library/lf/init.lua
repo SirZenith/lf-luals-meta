@@ -39,6 +39,16 @@ M.KeyMapType = {
 ---@param value any
 function M.print(value) end
 
+---@param dst any[]
+---@param src any[]
+---@param start? integer
+---@param finish? integer
+function M.list_ext(dst, src, start, finish) end
+
+---@param behavior "error" | "keep" | "force" | fun(key: any, prev_value?: any, value: any): any
+---@param ... table
+function M.tbl_extend(behavior, ...) end
+
 ---@param str string
 function M.cmd(str) end
 

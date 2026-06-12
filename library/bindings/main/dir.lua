@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.Dir
+---@class lf.Dir : userdata
 local Dir = {}
 
 ---@param path string

@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.App
+---@class lf.App : userdata
 local App = {}
 
 ---@return lf.UI
