@@ -45,27 +45,35 @@ function Style:foreground_name(name) end
 function Style:background_name(name) end
 
 ---@return lf.tcell.Style
+---@return lf.tcell.Style
 function Style:normal() end
 
 ---@param activate boolean
+---@return lf.tcell.Style
 function Style:bold(activate) end
 
 ---@param activate boolean
+---@return lf.tcell.Style
 function Style:blink(activate) end
 
 ---@param activate boolean
+---@return lf.tcell.Style
 function Style:dim(activate) end
 
 ---@param activate boolean
+---@return lf.tcell.Style
 function Style:italic(activate) end
 
 ---@param activate boolean
+---@return lf.tcell.Style
 function Style:reverse(activate) end
 
 ---@param activate boolean
+---@return lf.tcell.Style
 function Style:strike_through(activate) end
 
 ---@param activate boolean
+---@return lf.tcell.Style
 function Style:underline(activate) end
 
 ---@return boolean
