@@ -1,43 +1,19 @@
 ---@meta
 
----@class lf.UIRulerData
----@field curr_file? lf.File
----@field width integer
----@field message string
----@field keys string
----@field progress string[]
----@field copy string[]
----@field cut string[]
----@field select string[]
----@field visual string[]
----@field index integer
----@field total integer
----@field hidden integer
----@field all integer
----@field line_percentage string
----@field scroll_percentage string
----@field filter string[]
----@field mode string
+---@class lf.UIFormatterMsg
+---@field action function
+---@field is_async? boolean
 
----@class lf.UIPromptLineData
----@field width integer
----@field user_name string
----@field host_name string
----@field file_name string
----@field pwd string
----@field pwd_with_sep string
----@field filter string[]
----@field spacer string
+---@alias lf.UIFormatterStrToStrFunc fun(s: string): string
+
+---@class lf.UIFormatterStrToStr : lf.UIFormatterMsg
+---@field action lf.UIFormatterStrToStrFunc
 
 ---@class lf.UIFormatterTbl
----@field cursoractive? fun(s: string): string
----@field cursorparent? fun(s: string): string
----@field cursorpreview? fun(s: string): string
----@field dupfile? fun(basename: string, ext: string, dup_index: integer): string
----@field file? fun(win: lf.Win, ui: lf.UI, index: integer, file: lf.File, context: lf.PrintDirEntryContext)
----@field error? fun(msg: string): string
----@field numbercursor? fun(line_number: string): string
----@field number? fun(line_number: string): string
----@field ruler? fun(data: lf.UIRulerData): string, string
----@field prompt? fun(data: lf.UIPromptLineData): string
----@field tag? fun(tag: string): string
+---@field cursoractive? lf.UIFormatterStrToStrFunc | lf.UIFormatterStrToStr
+---@field cursorparent? lf.UIFormatterStrToStrFunc | lf.UIFormatterStrToStr
+---@field cursorpreview? lf.UIFormatterStrToStrFunc | lf.UIFormatterStrToStr
+---@field error? lf.UIFormatterStrToStrFunc | lf.UIFormatterStrToStr
+---@field numbercursor? lf.UIFormatterStrToStrFunc | lf.UIFormatterStrToStr
+---@field number? lf.UIFormatterStrToStrFunc | lf.UIFormatterStrToStr
+---@field tag? lf.UIFormatterStrToStrFunc | lf.UIFormatterStrToStr

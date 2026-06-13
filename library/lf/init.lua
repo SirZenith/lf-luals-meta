@@ -54,14 +54,17 @@ M.UIFormatterType = {
     cursoractive = nil, ---@type string
     cursorparent = nil, ---@type string
     cursorpreview = nil, ---@type string
-    dupfile = nil, ---@type string
     error = nil, ---@type string
-    file = nil, ---@type string
     numbercursor = nil, ---@type string
     number = nil, ---@type string
+    tag = nil, ---@type string
+}
+
+---@enum lf.UIPrinterType
+M.UIPrinterType = {
+    file = nil, ---@type string
     ruler = nil, ---@type string
     prompt = nil, ---@type string
-    tag = nil, ---@type string
 }
 
 ---@enum lf.UIStyleType
@@ -151,5 +154,31 @@ function M.str_fill(base, width, fill) end
 ---@param fill? string # fill string, default value is one space
 ---@return string
 function M.str_fill_right(base, width, fill) end
+
+---@param mod integer | lf.fs.FileMode
+function M.to_perm_string(mod) end
+
+---@param file lf.File
+---@return string
+function M.make_link_count_str(file) end
+
+---@param file lf.File
+---@return string
+function M.make_user_name_str(file) end
+
+---@param file lf.File
+---@return string
+function M.make_group_name_str(file) end
+
+---@return string
+function M.sanitize_name(str) end
+
+---@param size integer
+---@return string
+function M.file_size_humanize(size) end
+
+---@param path string
+---@return string
+function M.disk_free_space(path) end
 
 return M

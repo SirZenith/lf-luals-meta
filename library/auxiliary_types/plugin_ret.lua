@@ -8,4 +8,5 @@
 ---@field previewer? lf.PreviewerTbl
 ---@field sorting_method? lf.SortingMethodTbl
 ---@field ui_formatter? lf.UIFormatterTbl
+---@field ui_printer? lf.UIPrinterTbl
 ---@field ui_style? lf.UIStyleTbl

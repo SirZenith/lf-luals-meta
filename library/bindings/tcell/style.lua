@@ -44,6 +44,14 @@ function Style:foreground_name(name) end
 ---@return lf.tcell.Style
 function Style:background_name(name) end
 
+---@param index integer
+---@return lf.tcell.Style
+function Style:foreground_palette(index) end
+
+---@param index integer
+---@return lf.tcell.Style
+function Style:background_palette(index) end
+
 ---@return lf.tcell.Style
 ---@return lf.tcell.Style
 function Style:normal() end

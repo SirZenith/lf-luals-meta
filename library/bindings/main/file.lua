@@ -20,6 +20,9 @@ function File:size() end
 ---@return integer
 function File:mode() end
 
+---@return lf.time.Time
+function File:mod_time() end
+
 ---@return boolean
 function File:is_dir() end
 
