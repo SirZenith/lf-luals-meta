@@ -34,6 +34,7 @@
 ---@field cursorparent? fun(s: string): string
 ---@field cursorpreview? fun(s: string): string
 ---@field dupfile? fun(basename: string, ext: string, dup_index: integer): string
+---@field file? fun(win: lf.Win, ui: lf.UI, index: integer, file: lf.File, context: lf.PrintDirEntryContext)
 ---@field error? fun(msg: string): string
 ---@field numbercursor? fun(line_number: string): string
 ---@field number? fun(line_number: string): string

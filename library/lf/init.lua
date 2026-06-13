@@ -2,6 +2,19 @@
 
 local M = {}
 
+---@enum lf.ClipboardMode
+M.ClipboardMode = {
+    Copy = nil, ---@type integer
+    Cut = nil, ---@type integer
+}
+
+---@enum lf.DirRole
+M.DirRole = {
+    Active = nil, ---@type integer
+    Parent = nil, ---@type integer
+    Preview = nil, ---@type integer
+}
+
 ---@enum lf.EventType
 M.EventType = {
     PreCd = nil, ---@type string
@@ -34,6 +47,33 @@ M.KeyMapType = {
     Normal = "n",
     Visual = "v",
     Command = "c",
+}
+
+---@enum lf.UIFormatterType
+M.UIFormatterType = {
+    cursoractive = nil, ---@type string
+    cursorparent = nil, ---@type string
+    cursorpreview = nil, ---@type string
+    dupfile = nil, ---@type string
+    error = nil, ---@type string
+    file = nil, ---@type string
+    numbercursor = nil, ---@type string
+    number = nil, ---@type string
+    ruler = nil, ---@type string
+    prompt = nil, ---@type string
+    tag = nil, ---@type string
+}
+
+---@enum lf.UIStyleType
+M.UIStyleType = {
+    border = nil, ---@type string
+    copy = nil, ---@type string
+    cut = nil, ---@type string
+    menu = nil, ---@type string
+    menuheader = nil, ---@type string
+    menuselect = nil, ---@type string
+    select = nil, ---@type string
+    visual = nil, ---@type string
 }
 
 ---@param value any
@@ -86,6 +126,10 @@ function M.get_opt(opt) end
 ---@return any
 function M.get_opt(path, opt) end
 
+---@param expr lf.LuaMsgExpr
+---@return any ...
+function M.call_msg_expr(expr, ...) end
+
 ---@param pattern string
 ---@param str string
 function M.glob_match(pattern, str) end
@@ -95,5 +139,17 @@ function M.glob_match(pattern, str) end
 ---@return lf.CompMatch[]
 ---@return string
 function M.match_word(s, words) end
+
+---@param base string
+---@param width integer
+---@param fill? string # fill string, default value is one space
+---@return string
+function M.str_fill(base, width, fill) end
+
+---@param base string
+---@param width integer
+---@param fill? string # fill string, default value is one space
+---@return string
+function M.str_fill_right(base, width, fill) end
 
 return M

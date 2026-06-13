@@ -58,7 +58,7 @@ function M.ext(path) end
 function M.stat(path) end
 
 ---@param path string
----@return lf.File[]
+---@return lf.fs.DirEntry[]
 function M.readdir(path) end
 
 return M
