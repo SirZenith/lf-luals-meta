@@ -20,6 +20,10 @@ function M.display_width(str) end
 function M.get_formatter(name) end
 
 ---@param name string
+---@return lf.LuaMsgExpr?
+function M.get_printer(name) end
+
+---@param name string
 ---@param default_fmt_str string
 ---@param ... any
 ---@return any ...
@@ -59,9 +63,24 @@ function M.option_to_fmtstr(str) end
 function M.strip_term_sequence(str) end
 
 ---@param win lf.Win
----@param screen lf.tcell.Screen
+---@param ui lf.UI
 ---@param context lf.PrintDirEntryContext
 ---@param files lf.File[]
-function M.print_dir_entries(win, screen, context, files) end
+function M.print_dir_entry_list(win, ui, context, files) end
+
+---@param win lf.Win
+---@param screen lf.tcell.Screen
+---@param context lf.PrintDirEntryContext
+---@param index integer
+---@param file lf.File
+function M.print_dir_entry_plain(win, screen, context, index, file) end
+
+---@param win lf.Win
+---@param ui lf.UI
+---@param dir lf.Dir
+---@param context lf.DirContext
+---@param dir_style lf.DirStyle
+---@param preview_timer lf.time.Timer
+function M.print_directory_plain(win, ui, dir, context, dir_style, preview_timer) end
 
 return M

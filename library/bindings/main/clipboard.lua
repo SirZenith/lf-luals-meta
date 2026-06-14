@@ -9,7 +9,7 @@ function Clipboard:paths() end
 ---@return integer
 function Clipboard:mode() end
 
----@return fun(list: userdata, index: integer)
+---@return fun(list: userdata, index: integer): integer, string
 ---@return userdata list
 ---@return integer init_index
 function Clipboard:iter_path() end

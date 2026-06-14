@@ -80,8 +80,12 @@ function Dir:visual_selections() end
 ---@param height string
 function Dir:sel(name, height) end
 
----@param fn fun(i: integer, file: lf.File)
-function Dir:files_for_each(fn) end
+---@return fun(list: userdata, index: integer): integer, lf.File
+---@return userdata list
+---@return integer init_index
+function Dir:iter_files() end
 
----@param fn fun(i: integer, file: lf.File)
-function Dir:all_files_for_each(fn) end
+---@return fun(list: userdata, index: integer): integer, lf.File
+---@return userdata list
+---@return integer init_index
+function Dir:iter_all_files() end

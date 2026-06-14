@@ -64,7 +64,8 @@ M.UIFormatterType = {
 
 ---@enum lf.UIPrinterType
 M.UIPrinterType = {
-    file = nil, ---@type string
+    dir_entry = nil, ---@type string
+    directory = nil, ---@type string
     ruler = nil, ---@type string
     prompt = nil, ---@type string
 }

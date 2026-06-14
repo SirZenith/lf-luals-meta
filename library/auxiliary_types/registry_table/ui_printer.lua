@@ -4,7 +4,13 @@
 ---@field action function
 ---@field is_async? boolean
 
+---@class lf.UIPrinterDirEntryData
+---@field context lf.PrintDirEntryContext
+---@field index integer
+---@field file lf.File
+
 ---@class lf.UIPrinterDirectoryData
+---@field dir lf.Dir
 ---@field context lf.DirContext
 ---@field dir_style lf.DirStyle
 ---@field preview_timer lf.time.Timer
@@ -37,24 +43,24 @@
 ---@field filter string[]
 ---@field spacer string
 
----@alias lf.UIPrinterDirectoryFunc fun(win: lf.Win, screen: lf.tcell.Screen, dir: lf.Dir, data: lf.UIPrinterDirectoryData)
+---@alias lf.UIPrinterDirEntryFunc fun(win: lf.Win, ui: lf.UI, data: lf.UIPrinterDirEntryData)
+---@class lf.UIPrinterDirEntry : lf.UIPrinterMsg
+---@field action lf.UIPrinterDirEntryFunc
+
+---@alias lf.UIPrinterDirectoryFunc fun(win: lf.Win, ui: lf.UI, data: lf.UIPrinterDirectoryData)
 ---@class lf.UIPrinterDirectory : lf.UIPrinterMsg
 ---@field action lf.UIPrinterDirectoryFunc
 
----@alias lf.UIPrinterFileFunc fun(win: lf.Win, screen: lf.tcell.Screen, context: lf.PrintDirEntryContext, index: integer, file: lf.File)
----@class lf.UIPrinterFile : lf.UIPrinterMsg
----@field action lf.UIPrinterFileFunc
-
----@alias lf.UIPrinterRulerFunc fun(win: lf.Win, screen: lf.tcell.Screen, data: lf.UIPrinterRulerData)
+---@alias lf.UIPrinterRulerFunc fun(win: lf.Win, ui: lf.UI, data: lf.UIPrinterRulerData)
 ---@class lf.UIPrinterRuler : lf.UIPrinterMsg
 ---@field action lf.UIPrinterRulerFunc
 
----@alias lf.UIPrinterPromptFunc fun(win: lf.Win, screen: lf.tcell.Screen, data: lf.UIPrinterPromptData)
+---@alias lf.UIPrinterPromptFunc fun(win: lf.Win, ui: lf.UI, data: lf.UIPrinterPromptData)
 ---@class lf.UIPrinterPrompt : lf.UIPrinterMsg
 ---@field action lf.UIPrinterPromptFunc
 
 ---@class lf.UIPrinterTbl
+---@field dir_entry? lf.UIPrinterDirEntryFunc | lf.UIPrinterDirEntry
 ---@field directory? lf.UIPrinterDirectoryFunc | lf.UIPrinterDirectory
----@field file? lf.UIPrinterFileFunc | lf.UIPrinterFile
 ---@field ruler? lf.UIPrinterRulerFunc | lf.UIPrinterRuler
 ---@field prompt? lf.UIPrinterPromptFunc | lf.UIPrinterPrompt
