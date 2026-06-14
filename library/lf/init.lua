@@ -2,6 +2,8 @@
 
 local M = {}
 
+M.PREVIEW_LOADING_DELAY = nil ---@type lf.time.Duration
+
 ---@enum lf.ClipboardMode
 M.ClipboardMode = {
     Copy = nil, ---@type integer
@@ -127,7 +129,7 @@ function M.get_opt(opt) end
 ---@param path string
 ---@param opt string
 ---@return any
-function M.get_opt(path, opt) end
+function M.get_local_opt(path, opt) end
 
 ---@param expr lf.LuaMsgExpr
 ---@return any ...

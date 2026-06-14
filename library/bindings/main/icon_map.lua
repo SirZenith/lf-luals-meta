@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.IconMap
+---@class lf.IconMap : userdata
 local IconMap = {}
 
 ---@param file lf.File

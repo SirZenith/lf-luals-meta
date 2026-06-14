@@ -35,6 +35,7 @@
 ---@field info? lf.OptionEntry
 ---@field infotimefmtnew? lf.OptionEntry
 ---@field infotimefmtold? lf.OptionEntry
+---@field luamsglog? lf.OptionEntry
 ---@field menufmt? lf.OptionEntry
 ---@field menuheaderfmt? lf.OptionEntry
 ---@field menuselectfmt? lf.OptionEntry

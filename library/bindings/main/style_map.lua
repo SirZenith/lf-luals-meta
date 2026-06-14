@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.StyleMap
+---@class lf.StyleMap : userdata
 local StyleMap = {}
 
 ---@param file lf.File

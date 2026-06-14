@@ -12,8 +12,25 @@ Duration.Hour = nil ---@type lf.time.Duration
 
 Duration.__mul = nil ---@type fun(a: lf.time.Duration | number, b: lf.time.Duration | number): lf.time.Duration
 
+---@param value number
 ---@return lf.time.Duration
-function Duration.new() end
+function Duration.new(value) end
+
+---@param value integer | lf.time.Duration
+---@return lf.time.Duration
+function Duration:mul(value) end
+
+---@param value integer | lf.time.Duration
+---@return boolean
+function Duration:eq(value) end
+
+---@param value integer | lf.time.Duration
+---@return boolean
+function Duration:lt(value) end
+
+---@param value integer | lf.time.Duration
+---@return boolean
+function Duration:le(value) end
 
 ---@return integer
 function Duration:nanoseconds() end

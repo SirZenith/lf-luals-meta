@@ -4,7 +4,12 @@
 ---@field action function
 ---@field is_async? boolean
 
----@class lf.UIRulerData
+---@class lf.UIPrinterDirectoryData
+---@field context lf.DirContext
+---@field dir_style lf.DirStyle
+---@field preview_timer lf.time.Timer
+
+---@class lf.UIPrinterRulerData
 ---@field curr_file? lf.File
 ---@field width integer
 ---@field message string
@@ -23,7 +28,7 @@
 ---@field filter string[]
 ---@field mode string
 
----@class lf.UIPromptLineData
+---@class lf.UIPrinterPromptData
 ---@field user_name string
 ---@field host_name string
 ---@field file_name string
@@ -32,19 +37,24 @@
 ---@field filter string[]
 ---@field spacer string
 
+---@alias lf.UIPrinterDirectoryFunc fun(win: lf.Win, screen: lf.tcell.Screen, dir: lf.Dir, data: lf.UIPrinterDirectoryData)
+---@class lf.UIPrinterDirectory : lf.UIPrinterMsg
+---@field action lf.UIPrinterDirectoryFunc
+
 ---@alias lf.UIPrinterFileFunc fun(win: lf.Win, screen: lf.tcell.Screen, context: lf.PrintDirEntryContext, index: integer, file: lf.File)
 ---@class lf.UIPrinterFile : lf.UIPrinterMsg
 ---@field action lf.UIPrinterFileFunc
 
----@alias lf.UIPrinterRulerFunc fun(win: lf.Win, screen: lf.tcell.Screen, data: lf.UIRulerData)
+---@alias lf.UIPrinterRulerFunc fun(win: lf.Win, screen: lf.tcell.Screen, data: lf.UIPrinterRulerData)
 ---@class lf.UIPrinterRuler : lf.UIPrinterMsg
 ---@field action lf.UIPrinterRulerFunc
 
----@alias lf.UIPrinterPromptFunc fun(win: lf.Win, screen: lf.tcell.Screen, data: lf.UIPromptLineData)
+---@alias lf.UIPrinterPromptFunc fun(win: lf.Win, screen: lf.tcell.Screen, data: lf.UIPrinterPromptData)
 ---@class lf.UIPrinterPrompt : lf.UIPrinterMsg
 ---@field action lf.UIPrinterPromptFunc
 
 ---@class lf.UIPrinterTbl
+---@field directory? lf.UIPrinterDirectoryFunc | lf.UIPrinterDirectory
 ---@field file? lf.UIPrinterFileFunc | lf.UIPrinterFile
 ---@field ruler? lf.UIPrinterRulerFunc | lf.UIPrinterRuler
 ---@field prompt? lf.UIPrinterPromptFunc | lf.UIPrinterPrompt

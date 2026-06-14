@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.fs.DirEntry
+---@class lf.fs.DirEntry : userdata
 local DirEntry = {}
 
 ---@return string

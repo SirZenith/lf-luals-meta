@@ -22,10 +22,10 @@ function Dir:pos() end
 ---@return string
 function Dir:path() end
 
----@return string[]
+---@return lf.File[]
 function Dir:files() end
 
----@return string[]
+---@return lf.File[]
 function Dir:all_files() end
 
 ---@param method? string

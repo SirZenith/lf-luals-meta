@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.fs.FileMode
+---@class lf.fs.FileMode : userdata
 local FileMode = {}
 
 ---@return lf.fs.FileMode

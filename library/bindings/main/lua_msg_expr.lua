@@ -1,4 +1,4 @@
 ---@meta
 
----@class lf.LuaMsgExpr
+---@class lf.LuaMsgExpr : userdata
 local LuaMsgExpr = {}

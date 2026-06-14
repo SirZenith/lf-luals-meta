@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.DirStyle
+---@class lf.DirStyle : userdata
 local DirStyle = {}
 
 ---@return lf.StyleMap

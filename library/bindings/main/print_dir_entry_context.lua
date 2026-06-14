@@ -1,7 +1,27 @@
 ---@meta
 
----@class lf.PrintDirEntryContext
+---@class lf.PrintDirEntryContext : userdata
 local PrintDirEntryContext = {}
+
+---@class lf.PrintDirEntryContextConstructorArgs
+---@field dir lf.Dir
+---@field dir_beg integer
+---@field dir_end integer
+---@field dir_style lf.DirStyle
+--
+---@field lnwidth integer
+---@field user_width integer
+---@field group_width integer
+---@field custom_width integer
+---
+---@field selections table<string, integer>
+---@field clipboard lf.Clipboard
+---@field tags table<string, string>
+---@field visual_selections string[]
+
+---@param args lf.PrintDirEntryContextConstructorArgs
+---@return lf.PrintDirEntryContext
+function PrintDirEntryContext.new(args) end
 
 ---@return lf.Dir
 function PrintDirEntryContext:dir() end

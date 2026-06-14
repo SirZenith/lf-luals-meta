@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.Clipboard
+---@class lf.Clipboard : userdata
 local Clipboard = {}
 
 ---@return string[]

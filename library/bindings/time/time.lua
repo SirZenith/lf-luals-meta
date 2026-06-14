@@ -19,8 +19,9 @@ function Time.new_unix_mili(msec) end
 ---@return lf.time.Time
 function Time.new_unix_micro(micro) end
 
+---@param time lf.time.Time
 ---@return lf.time.Duration
-function Time.since() end
+function Time.since_time(time) end
 
 ---@return lf.time.Duration
 function Time.until_time() end

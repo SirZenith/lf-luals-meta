@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.Win
+---@class lf.Win : userdata
 local Win = {}
 
 ---@param w integer
@@ -35,3 +35,7 @@ function Win:renew(w, h, x, y) end
 ---@param str string
 ---@return lf.tcell.Style
 function Win:print(screen, x, y, st, str) end
+
+---@param screen lf.tcell.Screen
+---@param msg string
+function Win:print_msg(screen, msg) end

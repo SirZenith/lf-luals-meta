@@ -1,6 +1,6 @@
 ---@meta
 
----@class lf.IconDef
+---@class lf.IconDef : userdata
 local IconDef = {}
 
 ---@return string?

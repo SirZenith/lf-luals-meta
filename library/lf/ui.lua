@@ -58,4 +58,10 @@ function M.option_to_fmtstr(str) end
 ---@return string
 function M.strip_term_sequence(str) end
 
+---@param win lf.Win
+---@param screen lf.tcell.Screen
+---@param context lf.PrintDirEntryContext
+---@param files lf.File[]
+function M.print_dir_entries(win, screen, context, files) end
+
 return M
