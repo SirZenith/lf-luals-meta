@@ -89,3 +89,8 @@ function Dir:iter_files() end
 ---@return userdata list
 ---@return integer init_index
 function Dir:iter_all_files() end
+
+---@param key string
+---@param value number | boolean | string | nil
+---@return number | boolean | string | nil
+function Dir:extra_data(key, value) end

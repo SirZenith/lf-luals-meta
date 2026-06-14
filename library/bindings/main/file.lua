@@ -57,10 +57,10 @@ function File:custom_info(str) end
 ---@return string
 function File:ext() end
 
----@param key any
----@param value any?
----@return any
-function File:extra_info(key, value) end
+---@param key string
+---@param value number | boolean | string | nil
+---@return number | boolean | string | nil
+function File:extra_data(key, value) end
 
 ---@return boolean
 function File:is_previewable() end
