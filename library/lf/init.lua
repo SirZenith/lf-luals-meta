@@ -30,6 +30,13 @@ M.EventType = {
     OnQuit = nil, ---@type string
 }
 
+---@enum lf.KeyMapType
+M.KeyMapType = {
+    Normal = "n",
+    Visual = "v",
+    Command = "c",
+}
+
 ---@enum lf.ShellCmdType
 M.ShellCmdType = {
     Normal = nil, ---@type string
@@ -44,11 +51,17 @@ M.ShellCmdType = {
 ---| "!"
 ---| "&"
 
----@enum lf.KeyMapType
-M.KeyMapType = {
-    Normal = "n",
-    Visual = "v",
-    Command = "c",
+---@enum lf.SortMethod
+M.SortMethod = {
+    Natural = nil, ---@type string
+    Name = nil, ---@type string
+    Size = nil, ---@type string
+    Time = nil, ---@type string
+    Atime = nil, ---@type string
+    Btimed = nil, ---@type string
+    Ctime = nil, ---@type string
+    Ext = nil, ---@type string
+    Custom = nil, ---@type string
 }
 
 ---@enum lf.UIFormatterType

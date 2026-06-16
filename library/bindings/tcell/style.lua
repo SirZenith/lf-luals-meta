@@ -122,10 +122,14 @@ function Style:underline(activate) end
 -- local Style = lf_type.TcellStyle
 -- print(Style.UnderlineStyleSolid)
 -- ```
-function Style:set_underline_style() end
+---@param st_type integer
+---@return lf.tcell.Style
+function Style:set_underline_style(st_type) end
 
--- luaTcellStyleSetUnderlineColor sets color of underline.
-function Style:set_underline_color() end
+-- set_underline_color sets color of underline.
+---@param color lf.tcell.Color
+---@return lf.tcell.Style
+function Style:set_underline_color(color) end
 
 -- has_bold checks if current sytle has bold attribute.
 ---@return boolean
