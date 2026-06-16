@@ -19,6 +19,7 @@ lf_types = {
     FuncWriter = nil, ---@type lf.FuncWriter
     IconDef = nil, ---@type lf.IconDef
     IconMap = nil, ---@type lf.IconMap
+    LuaDataStore = nil, ---@type lf.LuaDataStore
     LuaMsgExpr = nil, ---@type lf.LuaMsgExpr
     Nav = nil, ---@type lf.Nav
     PrintDirEntryContext = nil, ---@type lf.PrintDirEntryContext
@@ -41,3 +42,6 @@ lf_types = {
 
 ---@type lf.App
 app = nil
+
+---@type lf.LuaDataStore
+data_store = nil
