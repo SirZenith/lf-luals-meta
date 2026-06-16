@@ -1,6 +1,6 @@
 ---@meta
 
----@alias lf.KeyMapFunc fun()
+---@alias lf.KeyMapFunc fun(count: integer)
 
 ---@class lf.KeyMap
 ---@field action string | lf.KeyMapFunc

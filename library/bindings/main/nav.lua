@@ -3,6 +3,9 @@
 ---@class lf.Nav : userdata
 local Nav = {}
 
+---@return integer
+function Nav:height() end
+
 ---@param path string
 ---@return lf.Dir
 function Nav:get_dir(path) end

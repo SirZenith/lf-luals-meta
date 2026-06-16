@@ -151,20 +151,25 @@
 ---@class lf.tcell.Color : userdata
 local Color = {}
 
+-- new_rgb creates color userdata with RGB channel value.
 ---@param r integer
 ---@param g integer
 ---@param b integer
 ---@return lf.tcell.Color
 function Color.new_rgb(r, g, b) end
 
+-- new_hex creates color userdata with hexadecimal integer value.
 ---@param hex integer
 ---@return lf.tcell.Color
 function Color.new_hex(hex) end
 
+-- new_name creates a color with color name or hex code starting with
+-- `#`.
 ---@param name lf.tcell.ColorName | string # color name or hex code starts with `#`
 ---@return lf.tcell.Color
 function Color.new_name(name) end
 
+-- new_palette creates new color with paletter index value.
 ---@param index integer
 ---@return lf.tcell.Color
 function Color.new_palette(index) end
