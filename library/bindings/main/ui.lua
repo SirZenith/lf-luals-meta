@@ -39,6 +39,26 @@ function UI:msg_win() end
 ---@return lf.Win
 function UI:menu_win() end
 
+-- msg returns current echo message content.
+---@return string
+function UI:msg() end
+
+-- menu returns rendered (multiline) menu text
+---@return string
+function UI:menu() end
+
+-- cmd_prefix returns command prefix/prompt (empty: Normal mode)
+---@return string
+function UI:cmd_prefix() end
+
+-- key_acc returns keys typed so far for mapping lookup
+---@return string
+function UI:key_acc() end
+
+-- key_count returns count prefix for next command
+---@return string
+function UI:key_count() end
+
 -- styles returns style map used for printing files.
 ---@return lf.StyleMap
 function UI:styles() end
