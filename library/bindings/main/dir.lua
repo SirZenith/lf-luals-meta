@@ -40,7 +40,7 @@ function Dir:files() end
 function Dir:files_len() end
 
 -- files_get_index gets a file from directory's `files` list with given index.
----@param index integer # 1-base index
+---@param index integer # 1-based index
 ---@return lf.File
 function Dir:files_get_index(index) end
 
@@ -53,7 +53,7 @@ function Dir:all_files() end
 function Dir:all_files_len() end
 
 -- all_files_get_index gets a file from directory's `all_files` list with given index.
----@param index integer
+---@param index integer # 1-based index
 ---@return lf.File
 function Dir:all_files_get_index(index) end
 
