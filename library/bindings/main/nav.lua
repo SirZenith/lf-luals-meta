@@ -23,6 +23,14 @@ function Nav:move_count() end
 ---@return integer
 function Nav:move_total() end
 
+-- delete_count returns number finished delete jobs.
+---@return integer
+function Nav:delete_count() end
+
+-- delete_total returns total number of delete jobs.
+---@return integer
+function Nav:delete_total() end
+
 -- get_clipboard returns clipboard object.
 ---@return lf.Clipboard
 function Nav:get_clipboard() end
@@ -262,6 +270,10 @@ function Nav:read_tags() end
 -- write_marks writes tag records to file.
 ---@return string? err
 function Nav:write_tags() end
+
+-- is_visual_mode reports if visual mode is on
+---@return boolean
+function Nav:is_visual_mode() end
 
 -- curr_dir returns current directory object.
 ---@return lf.Dir?

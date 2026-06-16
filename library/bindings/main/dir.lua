@@ -106,6 +106,24 @@ function Dir:hiddenfiles() end
 ---@return string[]
 function Dir:filter() end
 
+-- filter_len returns length of last used filter list.
+---@return integer
+function Dir:filter_len() end
+
+-- filter_get_index returns filter in filter list with given index.
+---@param index integer # 1-based index
+---@return string
+function Dir:filter_get_index(index) end
+
+-- iter_filters returns iterator function over directory's last used filter.
+-- This method can be used in `for` loop.
+-- ```lua
+-- for index, file in dir:iter_filters() do
+--     -- ...
+-- end
+-- ```
+function Dir:iter_filters() end
+
 -- sortignorecase returns sortignorecase option value used in last directory sort.
 ---@param value? boolean
 ---@return boolean

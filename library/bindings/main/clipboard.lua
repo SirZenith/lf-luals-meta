@@ -7,6 +7,15 @@ local Clipboard = {}
 ---@return string[]
 function Clipboard:paths() end
 
+-- paths_len returns length of selected file list.
+---@return integer
+function Clipboard:paths_len() end
+
+-- paths_get_index gets path with given index from selected path list.
+---@param index integer # 1-based index
+---@return string
+function Clipboard:paths_get_index(index) end
+
 -- mode returns clipboard mode (copy or cut).
 ---@return integer
 function Clipboard:mode() end
