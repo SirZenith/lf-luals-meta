@@ -59,14 +59,19 @@ function PrintDirEntryContext:tags() end
 ---@return string[]
 function PrintDirEntryContext:visual_selectioins() end
 
+-- get_selection_index returns 1-based selection index of
+-- given path, returns 0 when that path is not selected.
 ---@param path string
 ---@return integer
 function PrintDirEntryContext:get_selection_index(path) end
 
+-- visual_selection_contain checks if visual selection list contains given path.
 ---@param path string
 ---@return boolean
 function PrintDirEntryContext:visual_selection_contain(path) end
 
+-- get_tag returns tag of given path, returns `nil` when
+-- no tag is set for target path.
 ---@param path string
 ---@return string?
 function PrintDirEntryContext:get_tag(path) end

@@ -21,10 +21,14 @@ function DirContext:clipboard() end
 ---@return table<string, string>
 function DirContext:tags() end
 
+-- get_selection_index returns 1-based selection index of
+-- given path, returns 0 when that path is not selected.
 ---@param path string
 ---@return integer
 function DirContext:get_selection_index(path) end
 
+-- get_tag returns tag of given path, returns `nil` when
+-- no tag is set for target path.
 ---@param path string
 ---@return string?
 function DirContext:get_tag(path) end

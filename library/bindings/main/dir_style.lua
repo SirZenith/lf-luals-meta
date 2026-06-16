@@ -9,5 +9,5 @@ function DirStyle:colors() end
 ---@return lf.IconMap
 function DirStyle:icons() end
 
----@return integer
+---@return lf.DirRole
 function DirStyle:role() end
