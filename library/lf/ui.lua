@@ -15,10 +15,12 @@ function M.print_length(str) end
 ---@return integer
 function M.display_width(str) end
 
+-- get_formatter returns formatter Lua message with given name.
 ---@param name string
 ---@return lf.LuaMsgExpr?
 function M.get_formatter(name) end
 
+-- get_printer returns printer Lua message with given name.
 ---@param name string
 ---@return lf.LuaMsgExpr?
 function M.get_printer(name) end
