@@ -4,42 +4,6 @@
 ---@class lf.exec.Cmd : userdata
 local Cmd = {}
 
-Cmd.SIGABRT = nil ---@type integer
-Cmd.SIGALRM = nil ---@type integer
-Cmd.SIGBUS = nil ---@type integer
-Cmd.SIGCHLD = nil ---@type integer
-Cmd.SIGCLD = nil ---@type integer
-Cmd.SIGCONT = nil ---@type integer
-Cmd.SIGFPE = nil ---@type integer
-Cmd.SIGHUP = nil ---@type integer
-Cmd.SIGILL = nil ---@type integer
-Cmd.SIGINT = nil ---@type integer
-Cmd.SIGIO = nil ---@type integer
-Cmd.SIGIOT = nil ---@type integer
-Cmd.SIGKILL = nil ---@type integer
-Cmd.SIGPIPE = nil ---@type integer
-Cmd.SIGPOLL = nil ---@type integer
-Cmd.SIGPROF = nil ---@type integer
-Cmd.SIGPWR = nil ---@type integer
-Cmd.SIGQUIT = nil ---@type integer
-Cmd.SIGSEGV = nil ---@type integer
-Cmd.SIGSTKFLT = nil ---@type integer
-Cmd.SIGSTOP = nil ---@type integer
-Cmd.SIGSYS = nil ---@type integer
-Cmd.SIGTERM = nil ---@type integer
-Cmd.SIGTRAP = nil ---@type integer
-Cmd.SIGTSTP = nil ---@type integer
-Cmd.SIGTTIN = nil ---@type integer
-Cmd.SIGTTOU = nil ---@type integer
-Cmd.SIGUNUSED = nil ---@type integer
-Cmd.SIGURG = nil ---@type integer
-Cmd.SIGUSR1 = nil ---@type integer
-Cmd.SIGUSR2 = nil ---@type integer
-Cmd.SIGVTALRM = nil ---@type integer
-Cmd.SIGWINCH = nil ---@type integer
-Cmd.SIGXCPU = nil ---@type integer
-Cmd.SIGXFSZ = nil ---@type integer
-
 -- new creates a new command object with given command and argument list.
 ---@param cmd_str string
 ---@param ... any
@@ -126,13 +90,6 @@ function Cmd:set_stdout_writer_func(fn) end
 ---@param fn fun(p: string): integer, string?
 function Cmd:set_stderr_writer_func(fn) end
 
--- signal sends signal to subprocess. Signal values can be found as constant fields
--- in Cmd metatable.
---
--- ```lua
--- local Cmd = lf_types.Cmd
--- print(Cmd.SIGABRT)
--- ```
----@param sig integer
+-- kill kills subprocess immediately.
 ---@return string? err
-function Cmd:signal(sig) end
+function Cmd:kill(sig) end
