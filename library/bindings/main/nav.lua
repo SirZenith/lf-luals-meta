@@ -130,6 +130,7 @@ function Nav:preload() end
 function Nav:sort() end
 
 ---@param filters string[]
+---@return string? err
 function Nav:set_filter(filters) end
 
 -- up moves cursor up by `dist`.
