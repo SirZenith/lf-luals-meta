@@ -53,7 +53,7 @@ function Nav:get_tag_tbl() end
 
 -- get_tag returns tag of given path, and `nil` when no tag is set for target path.
 ---@param path string
----@return string
+---@return string?
 function Nav:get_tag(path) end
 
 -- height returns height of navigation viewport.
